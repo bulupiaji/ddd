@@ -2,8 +2,7 @@ package service
 
 import "cargo/model"
 
-func CargoBook(cargo *model.Cargo, carrier *model.Carrier) {
+func CargoBook(cargo *model.Cargo) {
 	// some rules
-	model.CargoDeliveryHistory[cargo.ID] = append(model.CargoDeliveryHistory[cargo.ID], carrier)
 
 }
